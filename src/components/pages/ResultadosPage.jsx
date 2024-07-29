@@ -1,7 +1,5 @@
+import ResultadosTemplate from "../templates/ResultadosTemplate";
+
 export default function ResultadosPage() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <ResultadosTemplate />;
 }
