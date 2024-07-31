@@ -1,4 +1,5 @@
 import ResultadoMolecule from "../molecules/ResultadoMolecule";
+import SelectorMolecule from "../molecules/SelectorMolecule";
 import listaActores from "../../datasets/actores.js";
 
 export default function ResultadosTemplate() {
@@ -6,12 +7,13 @@ export default function ResultadosTemplate() {
     <>
       {listaActores.map((item) => (
         <ResultadoMolecule
-          key={item.id} // Assuming each item has a unique id
+          key={item.id}
           imagen={item.image}
           personaje={item.character}
           serie="Game of Thrones"
         />
       ))}
+      <SelectorMolecule lista={listaActores} />
     </>
   );
 }

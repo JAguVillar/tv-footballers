@@ -12,12 +12,10 @@ export default function InicioTemplate() {
   const navigate = useNavigate();
 
   const [pais, setPais] = useState("Argentina");
-  useEffect(() => {
-    console.log(pais);
-  }, [pais]);
+
+  useEffect(() => {}, [pais]);
 
   const irAVotacion = () => {
-    console.log(pais);
     navigate("/votacion");
   };
 
